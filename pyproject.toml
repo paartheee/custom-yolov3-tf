@@ -1,0 +1,42 @@
+[tool.black]
+line-length = 79
+
+[tool.poetry]
+name = "custom-yolov3-tf"
+version = "0.0.1"
+description = "Custom YoloV3 tiny into tensorflow(pb)"
+authors = ["Parthiban Marimuthu <parthi.marimuthu10@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ParthibanMarimuthu/custom-yolov3-tf"
+repository = "https://github.com/ParthibanMarimuthu/custom-yolov3-tf"
+keywords = ["yolo", "yolov3", "tensorflow" , "custom"]
+classifiers = [
+    "Environment :: GPU",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.11"
+opencv-python = "^4.2.0"
+keras="2.2.4"
+numpy="1.16.1"
+scipy="1.1.0"
+pandas="0.24.1"
+pillow="5.4.1"
+scikit-image="0.14.2"
+sklearn
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+pytest = "^7.1.2"
+flake8 = "^5.0.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
